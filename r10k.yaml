@@ -1,0 +1,15 @@
+---
+cachedir: "/etc/puppetlabs/r10k/cache"
+deploy:
+  purge_levels:
+    - environment
+postrun:
+  - /etc/puppetlabs/r10k/postrun.sh
+sources:
+  control:
+    remote: https://github.com/ncsa/you-need-a-control-repo.git
+    basedir: /etc/puppetlabs/code/environments
+    invalid_branches: correct
+    ignore_branch_prefixes:
+      - master
+      - WIP
