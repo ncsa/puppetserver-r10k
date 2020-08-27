@@ -1,7 +1,7 @@
 # Puppetserver R10K Setup
 Basic configuration of r10k.
 
-Note: Assume r10k is already installed, such as in
+Note: Assumes that `r10k` is already installed, such as in
 [Pupperware](https://github.com/puppetlabs/pupperware).
 
 ## Dependencies
