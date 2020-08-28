@@ -27,7 +27,7 @@ def get_install_dir():
     key = 'install_dir'
     if key not in resources:
         resources[ key ] = pathlib.Path(
-            os.getenv( 'PUP_CUSTOM_DIR', default='/etc/puppetlabs/local' ) )
+            os.getenv( 'PUP_R10K_DIR', default='/etc/puppetlabs/r10k' ) )
     return resources[ key ]
 
 
@@ -35,7 +35,7 @@ def get_cfg():
     key = 'cfg'
     if key not in resources:
         base = get_install_dir()
-        confdir = get_install_dir() / 'config' / 'config.ini'
+        confdir = get_install_dir() / 'config.ini'
         cfg = configparser.ConfigParser()
         cfg.read( confdir )
         resources[ key ] = cfg
