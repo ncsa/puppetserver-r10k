@@ -72,11 +72,6 @@ clean_Old_Logs() {
 ###
 
 load_config
-echo "r10k: $r10k"
-echo "pidfile: $pidfile"
-echo "logdir: $logdir"
-echo "LOGFILE: $LOGFILE"
-die "FORCED EXIT"
 
 # If any cmdline paramters, run regular r10k and exit
 if [[ $# -gt 0 ]] ; then
