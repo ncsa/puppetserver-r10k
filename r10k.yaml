@@ -11,5 +11,6 @@ sources:
     basedir: /etc/puppetlabs/code/environments
     invalid_branches: correct
     ignore_branch_prefixes:
+      - main
       - master
       - WIP
