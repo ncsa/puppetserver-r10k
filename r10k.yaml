@@ -7,7 +7,7 @@ postrun:
   - /etc/puppetlabs/r10k/postrun.sh
 sources:
   control:
-    remote: https://github.com/ncsa/you-need-a-control-repo.git
+    remote: https://github.com/ncsa/control-repo
     basedir: /etc/puppetlabs/code/environments
     invalid_branches: correct
     ignore_branch_prefixes:
