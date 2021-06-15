@@ -5,7 +5,7 @@ deploy:
     - environment
 postrun:
   - /etc/puppetlabs/r10k/postrun.sh
-# proxy: http://httpproxy.ncsa.illinois.edu
+# proxy: http://httpproxy.ncsa.illinois.edu:3128
 sources:
   control:
     remote: https://github.com/ncsa/control-repo
