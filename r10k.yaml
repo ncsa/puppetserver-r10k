@@ -2,7 +2,9 @@
 cachedir: "/etc/puppetlabs/r10k/cache"
 deploy:
   purge_levels:
+    - deployment
     - environment
+    - puppetfile
 postrun:
   - /etc/puppetlabs/r10k/postrun.sh
 # proxy: http://httpproxy.ncsa.illinois.edu:3128
